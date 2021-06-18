@@ -1,0 +1,412 @@
+Day 1 
+
+
+print("Hello, Word")
+
+1.
+
+print(-10)
+print(3.14)
+print(1000)
+print(5+3)
+print(2*8)
+print(3*(3+1))
+
+
+2.
+
+print('풍선')
+print("나비")
+print('ㅋㅋㅋㅋㅋ')
+print('ㅋ'*9)
+
+
+3.
+
+print(5>10)
+print(5<10)
+print(True)
+print(False)
+print(not True)
+print(not False)
+print(not(5>10))
+
+
+4.
+
+#당신을 소개해 주세요~
+
+name = "문승현"
+age = 17
+hobby = "파이썬"
+is_not_adult = age <20
+
+
+''' 이렇게 하면
+여러문장이 주석이
+됩니다
+'''
+
+
+# 또한 주석처리를 하고 싶은 문장을 드래그 한다음에, 
+# ctrl + / 을 누르면 각 문장이 주석처리가 됩니다. 
+
+
+print("안녕하세요~")
+print("제 이름은 "+ name + "이고요,")
+hobby = "자바"
+#print("지금 " , hobby , "을 공부하고 있고요,")의 ','도 실행이 된다.
+print("지금 "  + hobby + "을 공부하고 있고요,")
+print("저는 "+ str(age) +"살입니다. True")
+# 정수형 변수를 출력할 때는, str()로 묶어준다.
+print(name + "은 어른일까요?" + is_not_adult) 
+
+
+5.
+
+a = 3
+if (a > 1):
+    print("%d is greater than 1" %a)
+
+b = 2
+if (a > b):
+    print("%d is greater than %d" )
+
+
+# <퀴즈> 변수를 이용하여 다음 문장을 출력하시오.
+
+# 변수형
+#  : station
+
+# 변수값
+#  : "사당", "신도림", "인천공항" 을 순서대로 입력
+
+# 출력 문장 
+#  : XX 행 열차가 들어오고 있습니다.
+
+station1 = "사당" 
+station2 = "신도림"
+station3 = "인천공항"
+
+print(station1+"행 열차가 들어오고 있습니다.")
+print(station2+"행 열차가 들어오고 있습니다.")
+print(station3+"행 열차가 들어오고 있습니다.") 
+
+
+6.
+
+for a in[1,2,3,4]:
+    print(a)
+    
+i = 0 
+while i < 3:
+    i += i
+    print(i)
+    break
+
+
+7.
+
+a = int
+b = int
+def add(a, b):
+    return a + b
+    # add(3, 4)
+print(add(3, 4)) # 7
+def add(a, b):
+    return a - b
+    # add(3, 4)
+print(add(3, 4)) # -1
+def add(a, b):
+    return a * b
+    # add(3, 4)
+print(add(3, 4)) # 12
+def add(a, b):
+    return a / b
+    # add(3, 4)
+print(add(3, 4)) # 0.75
+def add(a, b):
+    return a % b
+    # add(3, 4)
+print(add(3, 4)) # 3
+def add(a, b):
+    return a // b
+    # add(3, 4)
+print(add(3, 4)) # 0
+def add(a, b):
+    return a ** b
+    # add(3, 4)
+print(add(3, 4)) # 81
+
+
+8.
+
+''' 1. 사직연산'''
+
+print("첫번째....")
+print(1+1) # 1
+print(3-2) # 1
+print(3*2) # 6
+print(4/2) # 2.0
+
+
+''' 2. 제곱표현 '''
+
+print("두번째....")
+print(2**4) # 16
+print(3**2) # 9
+
+
+''' 3. 나머지 구하기 '''
+
+print("세번째....")
+print(6%4) # 2 
+print(10%3) # 1   
+
+
+''' 4. 몫을 구하기 '''
+
+print("네번째....")
+print(5//3) # 1 
+print (10//3) # 3
+
+
+''' 5. 비교연산자(부등호) 구하기 + '!'는 부정 '''
+
+print("다섯번째....")
+print(10>3) # True
+print(4>=7) # False
+print(10<3) # False
+print(5<=5) # True
+print(3==3) # True
+print(4==2) # False
+print(3+4==7) # True
+print(1 != 3) # True
+print(not(1 !=3)) #False
+
+
+''' 6. 두 개 이상의 항 - '그리고' 표현 '''
+
+print("여섯번째....")
+print(3>0) and (3<5) # True
+print((3>0) & (3<5)) # True
+print((3>0) & (3==5)) # False
+
+
+''' 7. 두 개 이상의 항 - '또는' 표현 '''
+
+print("일곱번째....")
+print(3>0) or (3>5) # True
+print((3>0)|(3>5)) # True + '|'는  'shift' + '\ (역슬래쉬)' 이다. 
+
+
+''' 8. 세 개 이상의 항 표현 '''
+
+print("여덟번째....")
+print(5 > 4 > 3) # True
+print(5 > 4 > 7) # False
+
+
+9.
+
+print(2 + 3 * 4) #14
+print((2 + 3) * 4) # 20
+
+num = 2 + 3 * 4 # 14
+print(num)
+
+num = num + 2 # 16
+print(num)
+
+num += 2 # 18
+print(num)
+
+num *= 2 # 32
+print(num)
+
+num /= 2 # 18
+print(num)
+
+num -= 2 # 16
+print(num)
+
+num %= 5 # 1 
+print(num)
+
+
+10.
+
+# 여러가지 수학 기호들 part. 1
+
+print(abs(-5)) # 5 - 절댓값 구하기 (abs)
+
+print(pow(4, 2)) # 4^2 = 4*4 = 4**2 = 16 - 
+                 # 두 수의 제곱 구하기 (pow)
+
+print(max(5, 12)) # 12 - 괄호 안의 숫자들 중에서 
+                  # 가장 큰 수 구하기 (max)
+
+print(min(5, 12)) # 5 - 괄호 안의 숫자들 중에서 
+                  # 가장 작은 수 구하기 (min)
+
+print(round(3.14)) # 3 - 반올림하기 (round)
+print(round(4.82)) # 5 - 반올림하기 (round)
+
+
+# Python에서 제공하는 'math library' 이용하기
+
+
+Day 2
+
+11. 랜덤 함수
+
+from random import *
+
+print(random()) # 0.0 ~ 1.0 미만의 임의의 값 생성
+print(random() * 10) # 0.0 ~ 10.0 미만의 임의의 값 생성
+print(int(random() * 10)) # 0 ~ 10  미만의 임의의 값 생성
+print(()* 100) # 0 ~ 100 미만의 임의의 값 생성
+print(int(random() * 100)) # 0 ~ 100 미안의 임의의 값 생성
+
+print(int(random()*10 + 1)) # 1 ~ 10 미만의 임의의 값 생성
+print(int(random()*10 + 1)) # 1 ~ 10 미만의 임의의 값 생성
+print(int(random()*10 + 1)) # 1 ~ 10 미만의 임의의 값 생성
+print(int(random()*10 + 1)) # 1 ~ 10 미만의 임의의 값 생성
+print(int(random()*10 + 1)) # 1 ~ 10 미만의 임의의 값 생성
+print(int(random()*10 + 1)) # 1 ~ 10 미만의 임의의 값 생성
+print(int(random()*10 + 1)) # 1 ~ 10 미만의 임의의 값 생성
+print(int(random()*10 + 1)) # 1 ~ 10 미만의 임의의 값 생성
+print(int(random()*10 + 1)) # 1 ~ 10 미만의 임의의 값 생성
+print(int(random()*10 + 1)) # 1 ~ 10 미만의 임의의 값 생성
+
+# 1 ~ 100000000까지의 숫자를 무작위로 10번 출력한다.
+a = 0
+while(a <= 10):
+    a = a+1
+    print(int(random() * 100000000))
+    
+# 로또 값을 출력
+
+print(int(random() * 45 + 1)) # 1 ~ 45 미만의 임의의 값 생성
+print(int(random() * 45 + 1)) # 1 ~ 45 미만의 임의의 값 생성
+print(int(random() * 45 + 1)) # 1 ~ 45 미만의 임의의 값 생성
+print(int(random() * 45 + 1)) # 1 ~ 45 미만의 임의의 값 생성
+print(int(random() * 45 + 1)) # 1 ~ 45 미만의 임의의 값 생성
+print(int(random() * 45 + 1)) # 1 ~ 45 미만의 임의의 값 생성
+print(int(random() * 45 + 1)) # 1 ~ 45 미만의 임의의 값 생성
+
+print(randrange(1, 46)) # 1 ~ 46 미만의 임의의 값 생성
+print(randint(1, 45)) # 1 ~ 45 이하의 임의의 값 생성
+
+
+12. 문자열 
+
+sentence = '나는 소년입니다'
+print(sentence)
+sentence2 = "파이썬은 쉬워요"
+print(sentence2)
+sentence3 = 'THIS IS PYTHON'
+print(sentence3)
+
+sentence4 = """
+I am a boy,
+and Python is easy
+THIS IS PYTHON!
+"""
+print(sentence4)
+
+
+13. 슬라이싱
+
+jumin = "990120-1234567"
+
+print("성별 : " + jumin[7])
+print("연 : " + jumin[0:2]) # 0 이상 2 미만
+print("월 : " + jumin[2:4]) # 2 이상 4 미만
+print("일 : " + jumin[4:6]) # 4 이상 6 미만
+print("생년월일 : " + jumin[:6]) # 처음부터 6 직전까지
+print("뒤 7자리 : " +  jumin[7:]) # 6 부터 끝까지
+print("뒤 7자리 (뒤에서 부터)" + jumin[-7:]) # 맨 뒤에서 7번째부터 끝까지
+
+
+14.  문자열 처리 함수
+
+python = "Python is Amazing"
+print(python.lower()) # 문장 전체를 소문자로 바꾼다.
+print(python.upper()) # 문장 전체를 대문자로 바꾼다.
+print(python[0].islower()) # 변수의 [0]번째 문자가 소문자인가 알려준다 (True or False)
+print(python[0].isupper()) # 변수의 [0]번째 문자가 대문자인가 알려준다 (True or False)
+print(len(python))
+print(python.replace("Python", "Java")) # 문자열 변수 안에 있는 값을 바꾼다.
+
+index = python.index("n") 
+# "n"문자가 몇번째에 위치해 있는지 알려준다
+
+print(index)
+index = python.index("n",index + 1) 
+# "n"문자가 위치한 곳에서 부터 1번 더한 후, 다음 "n"가 몇번째에 위치해 있는지 알려준다.
+print(index)
+
+print(python.find("n")) #
+print(python.find("Java")) # -1, 내가 원하는 값이 변수에 포함되지 않을때 반환한다.
+
+# print(python.index("Java")) # 오류가 뜬다
+
+
+print("hi") 
+# index에서 오류가 나면 print("hi")가 출력되지 않는다.
+# find는 오류가 나면 -1로 값을 변환하기 때문에 print("hi")가 출력된다.
+
+print(python.count("n")) # 변수 안에 "n"이 몇 개가 있는지 알려준다.
+
+
+15. 포맷 처리 함수
+
+
+print("a" + "b")
+print("a", "b")
+
+
+# 방법 1
+
+
+print("나는 %d살 입니다."% 20) # %d는 숫자 .. 뒤에 오는 숫자를 취급
+print("나는 %s살 입니다."% 20) # 숫자는 %s도 된다.
+
+print("나는 %s을 좋아해요."% "파이썬") # %s는 문자 .. "" 안에 있는 문자를 취급
+print("나는 %s색과 %s색을 좋아해요." % ("빨간", "노란")) # 두 개 이상의 값은 괄호를 쳐서 묶는다.
+
+print("Apple은 %c로 시작해요." % "A") # %c는 캐릭터 .. 한 글자만 취급
+
+
+
+# 방법 2
+
+
+# {}를 쓸때는 연속적으로 입력한 값이 나온다.
+
+print("나는 {}살입니다.".format(20, 10)) 
+# {}가 하나밖에 없으므로, .format() 안에 있는 0번째 것이 출력된다. 
+
+print("나는 {}색과 {}색을 좋아해요.".format("파란", "주황"))
+print("나는 {1}와 {0}를 좋아해요.".format("포도", "바나나")) 
+# .format() 안에 있는 것을 {} 안에 수를 넣어서 몇 번째 것을 넣고 출력할 것인지 정할 수 있다.
+# ex) .format() 안에 있는 0번째 것은 "사과"이고 1번째 있는 것은 "바나나"이다.
+
+
+
+# 방법 3
+
+
+print("나는 {age}살이며, {color}색을 좋아해요.".format(age= 17, color = "초록")) 
+# .format() 안에다가 변수를 만든다음, {} 속에 다가 입력하여서 출력할 수 있다.
+
+
+
+# 방법 4 (v3.6 이상~)
+
+num = 9
+grade = "고등"
+
+print(f"저는 {grade}학생이고, 출석번호는 {num}번입니다.") 
+# 이미 있는 변수를 {} 안에 'print(f"~ {} ~{}") 등등, 이렇게 입력해서 가져다가 쓸 수 있다.
